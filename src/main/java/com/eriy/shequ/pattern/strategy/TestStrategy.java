@@ -14,7 +14,7 @@ public class TestStrategy {
     static {
         map.put("plus",new PlusStrategyInterfaceImpl());
         map.put("minus",new MinusStrategyInterfaceImpl());
-        map.put("mulity",new MultiplyStrategyInterfaceImpl());
+        map.put("multiply",new MultiplyStrategyInterfaceImpl());
         map.put("divide",new DivideStrategyInterfaceImpl());
     }
     public static void main(String[] args) {
