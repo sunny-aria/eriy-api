@@ -26,8 +26,8 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <juit.version>3.8.1</juit.version>
     <lombok.version>1.16.18</lombok.version>
-    <poi.version>1.16.18</poi.version>
-    <commons-io.version>1.16.18</commons-io.version>
+    <poi.version>3.15</poi.version>
+    <commons-io.version>2.5</commons-io.version>
   </properties>
 
   <dependencies>
