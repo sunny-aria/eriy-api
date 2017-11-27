@@ -6,7 +6,7 @@ package com.eriy.shequ.pattern.strategy;
  * @author sunny
  * @create 2017/11/24 14:29
  **/
-public class MultiplyStrategyInterfaceImpl implements StrategyInterface {
+public class MultiplyStrategyInterfaceImpl implements StrategyInterface<MultiplyActive> {
     /**
      * a与b的运算，
      *
@@ -17,5 +17,11 @@ public class MultiplyStrategyInterfaceImpl implements StrategyInterface {
     @Override
     public int Calculation(int a, int b) {
         return a*b;
+    }
+
+    @Override
+    public int messageBusiness(Object sub) {
+        System.out.println(sub);
+        return 0;
     }
 }

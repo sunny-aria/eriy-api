@@ -6,7 +6,7 @@ package com.eriy.shequ.pattern.strategy;
  * @author sunny
  * @create 2017/11/24 14:24
  **/
-public interface StrategyInterface {
+public interface StrategyInterface<T extends ActiveParent> {
 
 
     /**
@@ -16,5 +16,8 @@ public interface StrategyInterface {
      * @return 结果
      */
     int Calculation(int a,int b);
+
+
+     <T> int  messageBusiness(T sub);
 
 }

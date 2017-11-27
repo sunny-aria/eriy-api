@@ -21,6 +21,11 @@ public class TestStrategy {
         if(args!=null){
             StrategyInterface strategy = map.get(args[0]);
             System.out.println(strategy.Calculation(10,2));
+            /*DivideActive da = new DivideActive();
+            da.setA(100); da.setB(20);*/
+            MinusActive da = new MinusActive();
+            da.setA("hello strategy");
+            System.out.println(strategy.messageBusiness(da));
         }
     }
 }

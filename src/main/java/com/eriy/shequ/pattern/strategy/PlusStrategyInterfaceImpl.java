@@ -18,4 +18,10 @@ public class PlusStrategyInterfaceImpl implements StrategyInterface {
     public int Calculation(int a, int b) {
         return a+b;
     }
+
+    @Override
+    public int messageBusiness(Object sub) {
+        System.out.println(sub);
+        return 0;
+    }
 }
