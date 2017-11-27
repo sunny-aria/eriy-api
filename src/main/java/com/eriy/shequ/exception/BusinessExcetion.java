@@ -1,20 +1,27 @@
 package com.eriy.shequ.exception;
 
+import lombok.Data;
+
+import java.io.Serializable;
+
 /**
  * 运行时异常
  * @author sunny
  * @create 2017/11/24 14:32
  **/
-public class BusinessExcetion extends RuntimeException{
-    private String code;
+@Data
+public class BusinessExcetion extends RuntimeException implements Serializable{
 
-    public BusinessExcetion(String code,String message) {
+    private static final long serialVersionUID = -7808682322309808538L;
+    private int code;
+
+    public BusinessExcetion(int code,String message) {
         super(message);
         this.code=code;
     }
 
 
-    public BusinessExcetion(String code,String message, Throwable cause) {
+    public BusinessExcetion(int code,String message, Throwable cause) {
         super(message,cause);
         this.code=code;
     }
