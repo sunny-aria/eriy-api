@@ -20,9 +20,8 @@ public class MinusStrategyInterfaceImpl implements StrategyInterface<MinusActive
     }
 
     @Override
-    public <T> int messageBusiness(T sub) {
-        MinusActive active = (MinusActive) sub;
-        System.out.println(active);
+    public   int messageBusiness(MinusActive sub) {
+        System.out.println(sub);
         return 0;
     }
 }

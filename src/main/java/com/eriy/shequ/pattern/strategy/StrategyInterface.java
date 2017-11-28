@@ -18,6 +18,6 @@ public interface StrategyInterface<T extends ActiveParent> {
     int Calculation(int a,int b);
 
 
-     <T> int  messageBusiness(T sub);
+     int  messageBusiness(T sub);
 
 }

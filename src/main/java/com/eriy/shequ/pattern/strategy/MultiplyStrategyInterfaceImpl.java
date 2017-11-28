@@ -20,7 +20,7 @@ public class MultiplyStrategyInterfaceImpl implements StrategyInterface<Multiply
     }
 
     @Override
-    public int messageBusiness(Object sub) {
+    public int messageBusiness(MultiplyActive sub) {
         System.out.println(sub);
         return 0;
     }

@@ -25,7 +25,7 @@ public class DivideStrategyInterfaceImpl implements StrategyInterface<DivideActi
     }
 
     @Override
-    public <T> int messageBusiness(T sub) {
+    public  int messageBusiness(DivideActive sub) {
         if((sub instanceof DivideActive)){
             System.out.println(sub);
             return 1;
