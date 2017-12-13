@@ -8,7 +8,7 @@ import com.eriy.shequ.exception.BusinessExcetion;
  * @author sunny
  * @create 2017/11/24 14:31
  **/
-public class DivideStrategyInterfaceImpl implements StrategyInterface<DivideActive>{
+public class DivideStrategyInterfaceImpl extends ActiveParent implements StrategyInterface<DivideActive>{
     /**
      * a与b的运算，a/b
      *
@@ -32,4 +32,6 @@ public class DivideStrategyInterfaceImpl implements StrategyInterface<DivideActi
         }
         return 0;
     }
+
+
 }

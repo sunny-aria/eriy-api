@@ -20,4 +20,12 @@ public interface StrategyInterface<T extends ActiveParent> {
 
      int  messageBusiness(T sub);
 
+
+    /**
+     * 测试父类实现了，子类是否需要实现
+     * @param a
+     * @return
+     */
+     boolean test(String a);
+
 }

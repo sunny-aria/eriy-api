@@ -6,7 +6,7 @@ package com.eriy.shequ.pattern.strategy;
  * @author sunny
  * @create 2017/11/24 14:26
  **/
-public class PlusStrategyInterfaceImpl implements StrategyInterface<PlusActive> {
+public class PlusStrategyInterfaceImpl extends ActiveParent implements StrategyInterface<PlusActive> {
     /**
      * a与b的运算，a+b
      *
