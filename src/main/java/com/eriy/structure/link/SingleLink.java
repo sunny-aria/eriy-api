@@ -104,7 +104,23 @@ public class SingleLink {
         return head;
     }
 
-    private void print(){
+    /**
+     * 单向链表反转，递归
+     * @param node
+     * @return
+     */
+    public SingleLinkNode reverseRecurision(SingleLinkNode node){
+        if (node == null || node.next == null){
+            return node;
+        }
+
+        SingleLinkNode reNode= reverseRecurision(node.next);
+        node.next.next=node;
+        node.next=null;
+        return reNode;
+    }
+
+        private void print(){
         SingleLinkNode temp = head;
         StringBuffer stringBuffer = new StringBuffer(128);
         while(temp.next!=null){
@@ -120,11 +136,11 @@ public class SingleLink {
 
     public static void main(String[] args) {
         SingleLink singleLink = new SingleLink();
-        for(int i=1;i<10;i++){
+        for(int i=1;i<3;i++){
             SingleLinkNode node = new SingleLinkNode(i);
             singleLink.insert(node);
         }
-        SingleLinkNode node = singleLink.reverseSingleLink(singleLink);
+        SingleLinkNode node = singleLink.reverseRecurision(singleLink.head);
         singleLink.head = node;
         singleLink.print();
 
